@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).mount('#app')
+import MainContainer from './components/MainContainer.vue';
+
+const app = createApp(App);
+
+app.component('main-container', MainContainer);
+
+app.mount('#app');
